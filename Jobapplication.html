@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job application</title>
+  </head>
+  <body>
+    <h1>Software developer job application</h1>
+    <form action="">
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label for="Full_Name">Full Name:</label
+        ><input
+          type="text"
+          id="Full_Name"
+          style="margin: 12px"
+          required
+        /><br />
+        <label for="Email">Email:</label
+        ><input type="email" id="Email" style="margin: 12px" required /><br />
+        <label for="Phone_Number">Phone Number:</label
+        ><input
+          type="tel"
+          id="Phone_Number"
+          style="margin: 12px"
+          required
+          maxlength="10"
+        />
+      </fieldset>
+      <fieldset>
+        <legend>Job Details</legend>
+        <label for="Role">Position Applied for :</label
+        ><input
+          type="text"
+          id="Role"
+          style="margin: 12px"
+          value="Software developer"
+        /><br />
+        <label for="Exp">Years of Experience</label
+        ><input type="text" id="Exp" style="margin: 12px" /><br />
+        <label for="Tech_Skills">Technical Skills:</label
+        ><input type="text" id="Tech_Skills" style="margin: 12px" /><br />
+        <label for="Loc"></label>Preferred Location<select
+          id="Loc"
+          style="margin: 12px; width: 90px"
+        >
+          <option value="">Remote</option>
+          <option value="">Hybrid</option>
+          <option value="">WFO</option></select
+        ><br />
+        <label for="Skills_List">Skills :</label>
+        <input list="Skills" id="Skills_List" style="margin: 10px" />
+        <datalist id="Skills">
+          <option value="HTML"></option>
+          <option value="CSS"></option>
+          <option value="Javascript"></option></datalist
+
+        ><br />
+
+        <label for="Resume">Upload Resume :</label
+        ><input type="file" id="Resume" style="margin: 20px" />
+      </fieldset>
+      <input
+        type="submit"
+        value="Submit application"
+        style="margin: 12px"
+        width="10px"
+      />
+    </form>
+  </body>
+</html>
